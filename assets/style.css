@@ -1,0 +1,19 @@
+*{box-sizing:border-box;margin:0;padding:0}:root{--bk:#0b0b0b;--gd:#c9a227;--tx:#e8e6e1;--mu:#9a968c}
+body{background:var(--bk);color:var(--tx);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+a{color:var(--gd);text-decoration:none}header{position:sticky;top:0;background:rgba(11,11,11,.95);border-bottom:1px solid #2a2410;z-index:9}
+.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;flex-wrap:wrap;gap:10px}
+.nav img{height:46px}.nav ul{list-style:none;display:flex;gap:22px;flex-wrap:wrap}.nav ul a{color:var(--tx);font-size:.95rem;letter-spacing:.05em;text-transform:uppercase}
+.nav ul a:hover,.nav ul a.on{color:var(--gd)}
+.hero{text-align:center;padding:110px 20px 90px;background:radial-gradient(circle at 50% 30%,#1c1708,#0b0b0b 70%)}
+.hero img{width:min(320px,70%)}.hero h1{font-size:clamp(2rem,6vw,3.6rem);margin:24px 0 8px;letter-spacing:.04em}
+.motto{color:var(--gd);font-size:clamp(1.1rem,3vw,1.5rem);letter-spacing:.15em;text-transform:uppercase}
+.btn{display:inline-block;margin-top:30px;padding:14px 32px;border:2px solid var(--gd);color:var(--gd);text-transform:uppercase;letter-spacing:.1em;font-weight:600}
+.btn:hover{background:var(--gd);color:var(--bk)}
+section.wrap{max-width:1100px;margin:auto;padding:70px 20px}h2{color:var(--gd);font-size:1.9rem;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:30px}
+.card{border:1px solid #2a2410;border-top:3px solid var(--gd);padding:26px;background:#111}.card h3{margin-bottom:8px}
+.card p,.lead{color:var(--mu)}.lead{max-width:720px;font-size:1.1rem}
+form{display:grid;gap:14px;max-width:560px;margin-top:24px}input,textarea{background:#141414;border:1px solid #333;color:var(--tx);padding:12px;font:inherit}
+button{cursor:pointer;background:var(--gd);color:var(--bk);border:0;padding:14px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}
+footer{border-top:1px solid #2a2410;text-align:center;padding:30px 20px;color:var(--mu);font-size:.9rem}
+@media(max-width:600px){.nav{justify-content:center}.nav ul{gap:14px;justify-content:center}.hero{padding:70px 16px}}
