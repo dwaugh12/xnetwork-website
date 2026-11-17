@@ -17,3 +17,34 @@ form{display:grid;gap:14px;max-width:560px;margin-top:24px}input,textarea{backgr
 button{cursor:pointer;background:var(--gd);color:var(--bk);border:0;padding:14px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}
 footer{border-top:1px solid #2a2410;text-align:center;padding:30px 20px;color:var(--mu);font-size:.9rem}
 @media(max-width:600px){.nav{justify-content:center}.nav ul{gap:14px;justify-content:center}.hero{padding:70px 16px}}
+
+/* Services upgrade 17 Nov 2026 — preview only */
+.hero .tagline{margin:16px auto 0;color:var(--mu);font-size:1.08rem;max-width:640px}
+.feature{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:40px;align-items:center;margin:28px 0 10px}
+.feature.reverse{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)}
+.feature.reverse .feature-copy{order:-1}
+.feature-media{border:1px solid #2a2410;background:#0b0b0b;overflow:hidden}
+.feature-media img,.photo-card img{width:100%;height:auto;display:block;aspect-ratio:1/1;object-fit:cover;background:#0b0b0b}
+.feature-copy h3{font-size:1.45rem;margin-bottom:10px}
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:22px}
+.photo-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.photo-card{border:1px solid #2a2410;border-top:3px solid var(--gd);background:#111;overflow:hidden}
+.photo-card .pad{padding:18px 20px 22px}
+.photo-card h3{margin-bottom:6px;font-size:1.05rem}
+.photo-card p{color:var(--mu);font-size:.95rem}
+.svc-block{margin-top:56px}
+.cta{text-align:center;border:1px solid #2a2410;border-top:3px solid var(--gd);background:#111;padding:48px 24px;margin-top:56px}
+.cta h2{margin-bottom:12px}
+.cta .contact-lines{margin:22px 0 6px;font-size:1.15rem;color:var(--tx);display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:center}
+.cta .contact-lines a{color:var(--gd)}
+.btn.solid{background:var(--gd);color:var(--bk);margin-top:22px}
+.btn.solid:hover{background:transparent;color:var(--gd)}
+.teaser-link{display:block;color:inherit}
+.teaser-link:hover .photo-card{border-color:var(--gd)}
+.more{margin-top:28px;color:var(--mu);max-width:720px}
+footer .motto{font-size:1rem;margin-bottom:8px}
+@media(max-width:800px){
+  .feature,.feature.reverse{grid-template-columns:1fr;gap:22px}
+  .feature .feature-copy,.feature.reverse .feature-copy{order:-1}
+  .photo-grid,.photo-grid.two{grid-template-columns:1fr}
+}
