@@ -48,3 +48,8 @@ footer .motto{font-size:1rem;margin-bottom:8px}
   .feature .feature-copy,.feature.reverse .feature-copy{order:-1}
   .photo-grid,.photo-grid.two{grid-template-columns:1fr}
 }
+
+/* 22 Nov 2026 — site support block */
+.svc-block > h3{font-size:1.45rem;margin-bottom:10px}
+.svc-block > .lead{margin-bottom:8px}
+.follow-on{margin-top:36px}
